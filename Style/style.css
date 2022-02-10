@@ -38,7 +38,8 @@ body{
     min-height: 100%;
     overflow: hidden;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
+    background: #FAFAFA;
 }
 .container{
     max-width: 1046px;
