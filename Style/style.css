@@ -200,8 +200,8 @@ header{
     padding-top: 50px;
 }
 .achievements-item {
-    max-width: 230px;
-    min-height: 209px;
+    width: 230px;
+    height: 209px;
     background: white;
     padding: 30px 30.5px;
     display: flex;
@@ -210,8 +210,8 @@ header{
     justify-content: space-between;
 }
 .achievements-item__img {
-    width: 48px;
-    height: 48px;
+    max-width: 48px;
+    min-height: 48px;
 }
 .achievements-item__head {
     font-weight: bold;
@@ -243,8 +243,8 @@ header{
     background: white;
 }
 .practice-item__info {
-    max-width: 232px;
-    min-height: 203px;
+    width: 232px;
+    height: 203px;
     padding: 30px;
 }
 .info-title {
@@ -605,7 +605,45 @@ header{
     .bottom-item:last-child{
         padding-right: 0;
     }
-    .bottom-link {
+/* adaptive */
+@media (max-width:1024px) {
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .bottom-img {
+}
+@media (max-width:834px) {
+    .practice-box {
+        flex-wrap: wrap;
+        justify-content:space-around;
     }
+    .who-box {
+        justify-content: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box__info {
+        padding-top: 20px;
+    }
+    .subscribe {
+        bottom: 0;
+        width: 890px;
+    }
+    .touch-item {
+        padding: 50px 20px;
+    }
+}
+@media (max-width:812px) {
+  .subscribe {
+    justify-content: space-around;
+  }
+  .touch-item {
+    padding: 50px 10px;
+}
+.center-item {
+    padding-left: 15px;
+}
+}
+@media (max-width:768px) {
+    
+}
